@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验二</title>
+</head>
+<body background="lbxx.jpg" repeat="no-repeat"
+      attachment="fixed"
+      size="100% 100%">
+<h2>用户注册页面</h2>
+<form name="form1" action="register.jsp"  method="post" enctype="multipart/form-data">
+    <pre>
+    姓名：<input type="text" name="username" size="10">
+
+    密码：<input type="password" name="psw" size="20" maxlength="16">
+
+    请上传图片：<input type="file" name="photo">
+<!-- 复选框-->
+    兴趣爱好：
+            <input type="checkbox" value="music" name="m1"/>听音乐
+            <input type="checkbox" value="trip" name="m2" />画画
+            <input type="checkbox" value="games" name="m3" />打游戏
+            <input type="checkbox" value="watching" name="m4" />追剧
+<!--单选按钮-->
+     性别：<input type="radio" value="female" name="gender"/>男 <input type="radio" value="male" name="gender"/>女
+
+    请选择居住城市：
+
+        <select name="city" id="lang">
+        <option value="beijing">北京</option>
+        <option value="shenzhen">深圳</option>
+        <option value="shanghai">上海</option>
+        <option value="guangzhou">广州</option>
+        <option value="zhengzhou">郑州</option>
+        <option value="xaimen">厦门</option>
+        <option value="luoyang">洛阳</option>
+        <option value="qingdao">青岛</option>
+      </select>
+            </option>
+        </select>
+
+    自我介绍：
+
+        <textarea name="say" rows="8" cols="50"></textarea>
+        <p>
+            <input type="submit" value="提交"> <input type="reset" value=重置> <input type="reset" value="取消">
+        </p>
+    </pre>
+</form>
+</body>
+</html>
